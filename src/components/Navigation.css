@@ -1,0 +1,120 @@
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #F5F5F5;
+    border-bottom: 2px solid #01b671;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+nav ul li {
+    transition: 0.4s all ease-out;   
+}
+
+nav ul li a {
+    color: rgb(79, 78, 78);
+    font-weight: 600;
+    font-size: 18px;
+    transition: 0.4s all ease-out;   
+}
+
+nav button {
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 2px solid #01b671;
+    background-color: #01b671;
+
+    color: #F5F5F5;
+    font-weight: 700;
+    font-size: 18px;
+    transition: 0.4s all ease-out;  
+}
+
+nav ul li a:hover button{
+    background-color: transparent;
+    color: #01b671;
+}
+
+nav ul li:hover{
+    transform: scale(1.1);
+    background-color: transparent;
+    color: rgb(79, 78, 78);
+}
+
+nav svg {
+    cursor: pointer;
+}
+
+.mobile {
+    display: none;
+}
+
+@media (max-width: 870px) {
+    .mobile {
+        display: block;
+    }
+
+    .navLinks {
+        display: flex;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        min-height: 100vh;
+        background-color: #01b671;
+        padding: 80px;
+    }
+    
+    nav ul{
+        margin-top: 40px;
+        flex-direction: column;
+        gap: 56px;
+    }
+    
+    nav ul li {
+        transition: 0.4s all ease-out;   
+    }
+    
+    nav ul li a {
+        color: #F5F5F5;
+        font-weight: 600;
+        font-size: 18px;
+        transition: 0.4s all ease-out;   
+    }
+    
+    nav button {
+        padding: 8px 12px;
+        border-radius: 8px;
+        border: 2px solid #01b671;
+        background-color: #F5F5F5;
+        color: rgb(79, 78, 78);
+        font-weight: 700;
+        font-size: 18px;
+        transition: 0.4s all ease-out;  
+    }
+    
+    nav ul li:hover{
+        transform: scale(1.1);
+        background-color: transparent;
+        color: rgb(79, 78, 78);
+    }
+    
+    nav svg {
+        cursor: pointer;
+    }
+}
